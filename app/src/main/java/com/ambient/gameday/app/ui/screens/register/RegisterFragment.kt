@@ -1,4 +1,4 @@
-package com.ambient.gameday.ui.screens.register
+package com.ambient.gameday.app.ui.screens.register
 
 import androidx.fragment.app.Fragment
 import com.ambient.gameday.R

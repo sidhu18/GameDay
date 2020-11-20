@@ -1,4 +1,4 @@
-package com.ambient.gameday
+package com.ambient.gameday.app
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

@@ -1,4 +1,4 @@
-package com.ambient.gameday.commons.utils.extensions
+package com.ambient.gameday.app.commons.utils.extensions
 
 import android.content.Context
 import android.view.LayoutInflater

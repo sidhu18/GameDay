@@ -1,4 +1,4 @@
-package com.ambient.gameday.commons.others
+package com.ambient.gameday.app.commons.others
 
 data class Response<out T>(val status: Status, val data: T?, val message: String?) {
     companion object {

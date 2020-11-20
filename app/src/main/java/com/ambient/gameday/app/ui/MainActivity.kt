@@ -1,4 +1,4 @@
-package com.ambient.gameday.ui
+package com.ambient.gameday.app.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

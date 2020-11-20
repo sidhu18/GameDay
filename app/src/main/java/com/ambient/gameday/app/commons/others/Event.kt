@@ -1,4 +1,4 @@
-package com.ambient.gameday.commons.others
+package com.ambient.gameday.app.commons.others
 
 open class Event<out T>(private val content: T) {
 

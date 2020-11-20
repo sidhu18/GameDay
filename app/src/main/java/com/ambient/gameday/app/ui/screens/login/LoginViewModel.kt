@@ -1,4 +1,4 @@
-package com.ambient.gameday.ui.screens.login
+package com.ambient.gameday.app.ui.screens.login
 
 import androidx.lifecycle.ViewModel
 

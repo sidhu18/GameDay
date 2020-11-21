@@ -8,9 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimary">#121212</color>
-    <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#3693A8</color>
+    <color name="colorPrimaryDark">#125F70</color>
+    <color name="colorAccent">#BD8666</color>
 
     <!-- Black Text -->
     <color name="colorTextBlackPrimary">#D1000000</color>

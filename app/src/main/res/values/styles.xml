@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.GameDay">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+<!--    &lt;!&ndash; Splash screen style&ndash;&gt;-->
+<!--    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">-->
+<!--        <item name="android:windowBackground">@drawable/splash_background</item>-->
+<!--    </style>-->
+
+
+    <!-- Text styles -->
+
+    <style name="textStyleNormal">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorTextBlackPrimary</item>
+    </style>
+
+    <style name="textStyleNormalBold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorTextBlackPrimary</item>
+    </style>
+
+    <style name="textStyleSubHeading">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorTextBlackPrimary</item>
+    </style>
+
+    <style name="textStyleHeading">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorTextBlackPrimary</item>
+    </style>
+
+</resources>

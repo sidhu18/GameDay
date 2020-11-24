@@ -1,4 +1,4 @@
-package com.ambient.gameday.data.entities
+package com.ambient.gameday.data.local.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

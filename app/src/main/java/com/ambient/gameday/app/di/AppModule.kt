@@ -1,9 +1,6 @@
 package com.ambient.gameday.app.di
 
 import android.content.Context
-import androidx.room.Room
-import com.ambient.gameday.app.commons.constants.Constants.DATABASE_NAME
-import com.ambient.gameday.data.AppDB
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import dagger.Module

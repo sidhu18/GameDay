@@ -3,7 +3,7 @@ package com.ambient.gameday.app.di
 import android.content.Context
 import androidx.room.Room
 import com.ambient.gameday.app.commons.constants.Constants
-import com.ambient.gameday.data.AppDB
+import com.ambient.gameday.data.local.AppDB
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

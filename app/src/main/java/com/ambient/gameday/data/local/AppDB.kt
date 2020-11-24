@@ -1,8 +1,8 @@
-package com.ambient.gameday.data
+package com.ambient.gameday.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.ambient.gameday.data.entities.UserEntity
+import com.ambient.gameday.data.local.entities.UserEntity
 
 @Database(
     entities = [

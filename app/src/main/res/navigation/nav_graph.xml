@@ -7,4 +7,19 @@
         android:id="@+id/loginFragment2"
         android:name="com.ambient.gameday.app.ui.screens.login.LoginFragment"
         android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.ambient.gameday.app.ui.screens.welcome.WelcomeFragment"
+        android:label="WelcomeFragment" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.ambient.gameday.app.ui.screens.register.RegisterFragment"
+        android:label="RegisterFragment" />
 </navigation>

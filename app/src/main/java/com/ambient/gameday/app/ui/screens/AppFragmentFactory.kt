@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
 import com.ambient.gameday.app.ui.screens.login.LoginFragment
 import com.ambient.gameday.app.ui.screens.register.RegisterFragment
+import com.ambient.gameday.app.ui.screens.welcome.WelcomeFragment
 import com.bumptech.glide.RequestManager
 import javax.inject.Inject
 
@@ -13,6 +14,7 @@ class AppFragmentFactory @Inject constructor(
 
     override fun instantiate(classLoader: ClassLoader, className: String): Fragment {
         return when(className){
+            WelcomeFragment::class.java.name -> WelcomeFragment()
             LoginFragment::class.java.name -> LoginFragment()
             RegisterFragment::class.java.name -> RegisterFragment()
             else -> super.instantiate(classLoader, className)

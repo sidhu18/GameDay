@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,13 +10,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="64dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="@string/welcome_header_text"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/login_page_welcome_header"
         android:textColor="@color/colorTextBlackPrimary"
-        android:textSize="24sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/back_button" />
 
     <TextView
         android:id="@+id/welcome_body_text"
@@ -24,49 +25,78 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:textColor="@color/colorTextBlackPrimary"
-        android:textSize="14sp"
-        android:lineSpacingExtra="2sp"
         android:gravity="center_vertical"
-        android:text="@string/welcome_body_text"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/login_page_welcome_body"
+        android:textColor="@color/colorTextBlackSecondary"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/welcome_header_text"
         app:layout_constraintTop_toBottomOf="@+id/welcome_header_text" />
 
-    <Button
-        android:id="@+id/create_account_button"
+    <EditText
+        android:id="@+id/user_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/create_an_account"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        android:layout_marginTop="32dp"
+        android:hint="@string/password"
+        style="@style/textStyleNormal"
         app:layout_constraintEnd_toEndOf="@+id/login_button"
-        app:layout_constraintStart_toStartOf="@+id/login_button" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
+        android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:hint="@string/login_page_email_hint"
+        style="@style/textStyleNormal"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/user_password"
+        app:layout_constraintEnd_toEndOf="@+id/user_password"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/user_password"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_body_text"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/login_button"
-        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="@string/log_in"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/terms_and_conditions_text"
-        app:layout_constraintEnd_toEndOf="@+id/terms_and_conditions_text"
-        app:layout_constraintStart_toStartOf="@+id/terms_and_conditions_text" />
+        app:layout_constraintBottom_toTopOf="@+id/create_account_text"
+        app:layout_constraintEnd_toEndOf="@+id/create_account_text"
+        app:layout_constraintStart_toStartOf="@+id/create_account_text" />
 
     <TextView
-        android:id="@+id/terms_and_conditions_text"
+        android:id="@+id/create_account_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="64dp"
-        android:text="@string/terms_conditions"
+        android:text="@string/login_page_create_account_prompt"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/content_desc_back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

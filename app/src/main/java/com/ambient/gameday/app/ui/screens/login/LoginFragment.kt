@@ -34,15 +34,14 @@ class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>() {
     private fun observeLiveData() {
 
         viewModel.validationResult.observe(viewLifecycleOwner, {
-            when (it.getContentIfNotHandled()?.status) {
 
-                Status.SUCCESS -> loginUser()
-
-                else -> Toast.makeText(
-                    context,
-                    it.getContentIfNotHandled()?.message,
-                    Toast.LENGTH_SHORT
-                ).show()
+            it.getContentIfNotHandled()?.let { response ->
+                when (response.status) {
+                    Status.SUCCESS -> loginUser()
+                    else -> response.message?.let { message ->
+                        toast(message)
+                    }
+                }
             }
         })
     }

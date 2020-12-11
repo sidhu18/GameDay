@@ -117,7 +117,7 @@ dependencies {
     kaptTest "com.google.dagger:hilt-android-compiler:$version_hilt"
 
     // DataStore Preferences
-    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha04"
+    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha05"
 
 }
 

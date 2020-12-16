@@ -4,10 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.ambient.gameday.R
 import com.ambient.gameday.app.commons.others.Status
 import com.ambient.gameday.app.ui.base.BaseFragment
 import com.ambient.gameday.databinding.FragmentLoginBinding
@@ -33,17 +30,20 @@ class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>() {
 
     private fun observeLiveData() {
 
-        viewModel.validationResult.observe(viewLifecycleOwner, {
+        viewModel.validationResult.observe(
+            viewLifecycleOwner,
+            {
 
-            it.getContentIfNotHandled()?.let { response ->
-                when (response.status) {
-                    Status.SUCCESS -> loginUser()
-                    else -> response.message?.let { message ->
-                        toast(message)
+                it.getContentIfNotHandled()?.let { response ->
+                    when (response.status) {
+                        Status.SUCCESS -> loginUser()
+                        else -> response.message?.let { message ->
+                            toast(message)
+                        }
                     }
                 }
             }
-        })
+        )
     }
 
     private fun loginUser() {

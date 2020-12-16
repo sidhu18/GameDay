@@ -6,4 +6,5 @@
     <dimen name="spacing_large">24dp</dimen>
     <dimen name="spacing_xlarge">32dp</dimen>
     <dimen name="logo_size">54dp</dimen>
+    <dimen name="product_image_size">140dp</dimen>
 </resources>

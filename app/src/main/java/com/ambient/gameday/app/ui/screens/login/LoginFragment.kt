@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.ambient.gameday.R
 import com.ambient.gameday.app.commons.others.Status
 import com.ambient.gameday.app.ui.base.BaseFragment
 import com.ambient.gameday.databinding.FragmentLoginBinding
@@ -22,9 +24,12 @@ class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>() {
     }
 
     private fun validateInputData() {
-        viewModel.validate(
-            binding.userEmail.text.toString(),
-            binding.userPassword.text.toString()
+//        viewModel.validate(
+//            binding.userEmail.text.toString(),
+//            binding.userPassword.text.toString()
+//        )
+        findNavController().navigate(
+            R.id.action_loginFragment2_to_homeFragment
         )
     }
 

@@ -10,8 +10,9 @@ import com.ambient.gameday.app.ui.screens.home.adapters.views.viewholders.Header
 import com.ambient.gameday.app.ui.screens.home.adapters.views.viewholders.ProductListViewHolder
 import com.ambient.gameday.databinding.RecyclerItemProductHeaderBinding
 import com.ambient.gameday.databinding.RecyclerItemProductListingBinding
+import javax.inject.Inject
 
-class ProductListTypeFactoryImpl : ProductListTypeFactory {
+class ProductListTypeFactoryImpl @Inject constructor() : ProductListTypeFactory {
 
     override fun type(productListHeader: ProductListHeader) = R.layout.recycler_item_product_header
 

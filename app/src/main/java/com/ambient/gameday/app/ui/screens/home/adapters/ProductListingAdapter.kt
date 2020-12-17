@@ -7,11 +7,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ambient.gameday.app.ui.base.BaseViewHolder
 import com.ambient.gameday.app.ui.screens.home.adapters.views.ProductListView
 import com.ambient.gameday.app.ui.screens.home.adapters.views.typefactory.ProductListTypeFactory
+import javax.inject.Inject
 
 @Suppress("UNCHECKED_CAST")
-class ProductListingAdapter(
-    private val productListTypeFactory: ProductListTypeFactory
-) : RecyclerView.Adapter<BaseViewHolder<ProductListView>>() {
+class ProductListingAdapter @Inject constructor() :
+    RecyclerView.Adapter<BaseViewHolder<ProductListView>>() {
+
+    @Inject
+    lateinit var productListTypeFactory: ProductListTypeFactory
 
     private val differ = AsyncListDiffer(
         this,

@@ -3,7 +3,7 @@ package com.ambient.gameday.app.ui.screens
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
 import com.ambient.gameday.app.ui.screens.home.HomeFragment
-import com.ambient.gameday.app.ui.screens.home.adapters.ProductListingAdapter
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.ProductListingAdapter
 import com.ambient.gameday.app.ui.screens.login.LoginFragment
 import com.ambient.gameday.app.ui.screens.register.RegisterFragment
 import com.ambient.gameday.app.ui.screens.welcome.WelcomeFragment

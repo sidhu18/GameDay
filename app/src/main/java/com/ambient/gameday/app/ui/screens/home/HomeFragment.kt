@@ -6,9 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.ambient.gameday.app.ui.base.BaseFragment
-import com.ambient.gameday.app.ui.screens.home.adapters.ProductListingAdapter
-import com.ambient.gameday.app.ui.screens.home.adapters.views.ProductListHeader
-import com.ambient.gameday.app.ui.screens.home.adapters.views.ProductListView
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.ProductListingAdapter
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.ProductListHeader
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.ProductListItems
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.ProductListView
+import com.ambient.gameday.app.ui.screens.home.adapters.product.ProductListItem
 import com.ambient.gameday.databinding.FragmentHomeBinding
 import javax.inject.Inject
 
@@ -30,8 +32,19 @@ class HomeFragment @Inject constructor(
     }
 
     private fun setData() {
+        val products: List<ProductListItem> = mutableListOf(
+            ProductListItem(
+                "product_list_678",
+                "Yonex Nanoray",
+                "",
+                "Badminton",
+                1678
+            )
+        )
+
         val items: List<ProductListView> = mutableListOf(
-            ProductListHeader("345", "Trending")
+            ProductListHeader("345", "Trending"),
+            ProductListItems("56", products)
         )
         productListingAdapter.productList = items
     }

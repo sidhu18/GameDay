@@ -1,13 +1,13 @@
-package com.ambient.gameday.app.ui.screens.home.adapters.views.typefactory
+package com.ambient.gameday.app.ui.screens.home.adapters.listing.views.typefactory
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.ambient.gameday.R
 import com.ambient.gameday.app.ui.base.BaseViewHolder
-import com.ambient.gameday.app.ui.screens.home.adapters.views.ProductListHeader
-import com.ambient.gameday.app.ui.screens.home.adapters.views.ProductListItems
-import com.ambient.gameday.app.ui.screens.home.adapters.views.viewholders.HeaderViewHolder
-import com.ambient.gameday.app.ui.screens.home.adapters.views.viewholders.ProductListViewHolder
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.ProductListHeader
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.ProductListItems
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.viewholders.HeaderViewHolder
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.viewholders.ProductListViewHolder
 import com.ambient.gameday.databinding.RecyclerItemProductHeaderBinding
 import com.ambient.gameday.databinding.RecyclerItemProductListingBinding
 import javax.inject.Inject

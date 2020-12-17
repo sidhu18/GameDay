@@ -8,14 +8,12 @@
 
     <TextView
         android:id="@+id/product_header"
+        style="@style/textStyleSubHeading"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_normal"
         android:layout_marginTop="@dimen/spacing_normal"
-        android:layout_marginEnd="@dimen/spacing_large"
-        style="@style/textStyleSubHeading"
-        tools:text="Trending"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Trending" />
 </androidx.constraintlayout.widget.ConstraintLayout>

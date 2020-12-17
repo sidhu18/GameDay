@@ -1,12 +1,12 @@
-package com.ambient.gameday.app.ui.screens.home.adapters
+package com.ambient.gameday.app.ui.screens.home.adapters.listing
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.ambient.gameday.app.ui.base.BaseViewHolder
-import com.ambient.gameday.app.ui.screens.home.adapters.views.ProductListView
-import com.ambient.gameday.app.ui.screens.home.adapters.views.typefactory.ProductListTypeFactory
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.ProductListView
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.typefactory.ProductListTypeFactory
 import javax.inject.Inject
 
 @Suppress("UNCHECKED_CAST")

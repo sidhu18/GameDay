@@ -1,4 +1,4 @@
-package com.ambient.gameday.app.ui.screens.home.adapters.views
+package com.ambient.gameday.app.ui.screens.home.adapters.listing.views
 
 import com.ambient.gameday.app.ui.components.Visitor
 

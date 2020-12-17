@@ -14,6 +14,26 @@ buildscript {
     }
 }
 
+plugins {
+    id "org.jlleitschuh.gradle.ktlint" version "9.4.1"
+}
+
+ktlint {
+    version = "0.36.0"
+    android = true
+    disabledRules = ["import-ordering"]
+}
+
+
+subprojects {
+    apply plugin: "org.jlleitschuh.gradle.ktlint"
+
+    ktlint {
+        debug = true
+        disabledRules = ["import-ordering"]
+    }
+}
+
 allprojects {
     repositories {
         google()

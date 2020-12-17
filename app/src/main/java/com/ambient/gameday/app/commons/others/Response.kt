@@ -12,7 +12,7 @@ data class Response<out T>(val status: Status, val data: T?, val message: String
         }
 
         fun <T> error(msg: String): Response<T> {
-            return error(msg,null)
+            return error(msg, null)
         }
 
         fun <T> error(msg: String, data: T?): Response<T> {

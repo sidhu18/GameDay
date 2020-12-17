@@ -9,11 +9,11 @@ import com.bumptech.glide.RequestManager
 import javax.inject.Inject
 
 class AppFragmentFactory @Inject constructor(
-    private val glide : RequestManager
-) : FragmentFactory(){
+    private val glide: RequestManager
+) : FragmentFactory() {
 
     override fun instantiate(classLoader: ClassLoader, className: String): Fragment {
-        return when(className){
+        return when (className) {
             WelcomeFragment::class.java.name -> WelcomeFragment()
             LoginFragment::class.java.name -> LoginFragment()
             RegisterFragment::class.java.name -> RegisterFragment()

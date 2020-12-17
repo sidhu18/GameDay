@@ -21,15 +21,15 @@ class LoginViewModelTest {
     private lateinit var viewModel: LoginViewModel
 
     @Before
-    fun setup(){
+    fun setup() {
         viewModel = LoginViewModel()
     }
 
     @Test
-    fun `validation test empty email returns error`(){
+    fun `validation test empty email returns error`() {
         val email = ""
         val password = "1234556"
-        viewModel.validate(email,password)
+        viewModel.validate(email, password)
 
         val value = viewModel.validationResult.getOrAwaitValueTest()
 
@@ -37,10 +37,10 @@ class LoginViewModelTest {
     }
 
     @Test
-    fun `validation test empty password returns error`(){
+    fun `validation test empty password returns error`() {
         val email = "emailnotempty@gmail.com"
         val password = ""
-        viewModel.validate(email,password)
+        viewModel.validate(email, password)
 
         val value = viewModel.validationResult.getOrAwaitValueTest()
 
@@ -48,10 +48,10 @@ class LoginViewModelTest {
     }
 
     @Test
-    fun `validation test valid email and password returns success`(){
+    fun `validation test valid email and password returns success`() {
         val email = "emailnotempty@gmail.com"
         val password = "password"
-        viewModel.validate(email,password)
+        viewModel.validate(email, password)
 
         val value = viewModel.validationResult.getOrAwaitValueTest()
 

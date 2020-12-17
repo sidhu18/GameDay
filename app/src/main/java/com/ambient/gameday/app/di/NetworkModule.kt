@@ -16,7 +16,7 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideGameDayApi() : GameDayAPI{
+    fun provideGameDayApi(): GameDayAPI {
         return Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create())
             .baseUrl(BASE_URL)

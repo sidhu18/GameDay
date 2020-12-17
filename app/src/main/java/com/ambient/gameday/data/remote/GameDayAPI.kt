@@ -1,4 +1,3 @@
 package com.ambient.gameday.data.remote
 
-interface GameDayAPI {
-}
+interface GameDayAPI

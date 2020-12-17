@@ -5,16 +5,16 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "user")
-data class UserEntity (
+data class UserEntity(
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "user_id")
-    val userId : Int,
+    val userId: Int,
 
-    val name : String,
+    val name: String,
 
-    val email : String,
+    val email: String,
 
     @ColumnInfo(name = "created_time")
-    val createdTime : Long
+    val createdTime: Long
 )

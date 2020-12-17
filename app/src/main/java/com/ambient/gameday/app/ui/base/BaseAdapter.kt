@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 
-abstract class BaseAdapter<T, VB : ViewBinding, VH : BaseViewHolder<T, VB>> :
-    RecyclerView.Adapter<BaseViewHolder<T, VB>>() {
+abstract class BaseAdapter<T, VB : ViewBinding, VH : BaseViewHolder<T>> :
+    RecyclerView.Adapter<BaseViewHolder<T>>() {
 
     protected abstract val differ: AsyncListDiffer<T>
 
@@ -17,7 +17,7 @@ abstract class BaseAdapter<T, VB : ViewBinding, VH : BaseViewHolder<T, VB>> :
         get() = differ.currentList
         set(value) = differ.submitList(value)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder<T, VB> {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder<T> {
         val binding: VB = DataBindingUtil.inflate(
             LayoutInflater.from(parent.context),
             getLayout(),
@@ -31,7 +31,7 @@ abstract class BaseAdapter<T, VB : ViewBinding, VH : BaseViewHolder<T, VB>> :
 
     abstract fun getLayout(): Int
 
-    override fun onBindViewHolder(holder: BaseViewHolder<T, VB>, position: Int) {
+    override fun onBindViewHolder(holder: BaseViewHolder<T>, position: Int) {
         holder.bind(items[position])
     }
 
@@ -40,5 +40,4 @@ abstract class BaseAdapter<T, VB : ViewBinding, VH : BaseViewHolder<T, VB>> :
     }
 
     var listener: ((view: View, item: T, position: Int) -> Unit)? = null
-
 }

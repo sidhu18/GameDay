@@ -1,7 +1,7 @@
 package com.ambient.gameday.app.di
 
-import com.ambient.gameday.app.ui.screens.home.adapters.views.typefactory.ProductListTypeFactory
-import com.ambient.gameday.app.ui.screens.home.adapters.views.typefactory.ProductListTypeFactoryImpl
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.typefactory.ProductListTypeFactory
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.typefactory.ProductListTypeFactoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
 }
@@ -55,15 +54,15 @@ dependencies {
     testImplementation "junit:junit:4.13.1"
     testImplementation "org.hamcrest:hamcrest-all:1.3"
     testImplementation "androidx.arch.core:core-testing:2.1.0"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.1"
     testImplementation "org.robolectric:robolectric:4.4"
-    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.9"
     testImplementation "com.google.truth:truth:1.1"
     testImplementation "org.mockito:mockito-core:2.21.0"
 
     // Instrumented Unit Tests
     androidTestImplementation "junit:junit:4.13.1"
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.1"
     androidTestImplementation "com.linkedin.dexmaker:dexmaker-mockito:2.28.0"
-    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.9"
     androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
     androidTestImplementation "com.google.truth:truth:1.0.1"
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
@@ -101,7 +100,7 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
 
     // Dagger Hilt
-    def version_hilt ="2.28-alpha"
+    def version_hilt ="2.30.1-alpha"
     implementation "com.google.dagger:hilt-android:$version_hilt"
     kapt "com.google.dagger:hilt-android-compiler:$version_hilt"
 

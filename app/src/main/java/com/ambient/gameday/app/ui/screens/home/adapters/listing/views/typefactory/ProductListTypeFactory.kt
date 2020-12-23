@@ -1,9 +1,9 @@
-package com.ambient.gameday.app.ui.screens.home.adapters.views.typefactory
+package com.ambient.gameday.app.ui.screens.home.adapters.listing.views.typefactory
 
 import android.view.ViewGroup
 import com.ambient.gameday.app.ui.base.BaseViewHolder
-import com.ambient.gameday.app.ui.screens.home.adapters.views.ProductListHeader
-import com.ambient.gameday.app.ui.screens.home.adapters.views.ProductListItems
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.ProductListHeader
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.ProductListItems
 
 interface ProductListTypeFactory {
     fun type(productListHeader: ProductListHeader): Int

@@ -1,4 +1,4 @@
-package com.ambient.gameday.app.ui.screens.home.adapters.views
+package com.ambient.gameday.app.ui.screens.home.adapters.product
 
 data class ProductListItem(
     val id: String,

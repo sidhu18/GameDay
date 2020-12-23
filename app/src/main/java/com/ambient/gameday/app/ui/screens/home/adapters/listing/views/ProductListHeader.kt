@@ -1,6 +1,6 @@
-package com.ambient.gameday.app.ui.screens.home.adapters.views
+package com.ambient.gameday.app.ui.screens.home.adapters.listing.views
 
-import com.ambient.gameday.app.ui.screens.home.adapters.views.typefactory.ProductListTypeFactory
+import com.ambient.gameday.app.ui.screens.home.adapters.listing.views.typefactory.ProductListTypeFactory
 
 data class ProductListHeader(
     override val id: String,

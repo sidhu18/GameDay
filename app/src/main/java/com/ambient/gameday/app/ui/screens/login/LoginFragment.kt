@@ -29,7 +29,7 @@ class LoginFragment : BaseFragment<FragmentLoginBinding, LoginViewModel>() {
 //            binding.userPassword.text.toString()
 //        )
         findNavController().navigate(
-            R.id.action_loginFragment2_to_homeFragment
+            R.id.action_loginFragment2_to_profileFragment
         )
     }
 

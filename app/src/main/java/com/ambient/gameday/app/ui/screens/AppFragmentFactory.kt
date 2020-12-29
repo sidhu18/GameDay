@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentFactory
 import com.ambient.gameday.app.ui.screens.home.HomeFragment
 import com.ambient.gameday.app.ui.screens.home.adapters.featured.FeaturedProductsAdapter
 import com.ambient.gameday.app.ui.screens.login.LoginFragment
+import com.ambient.gameday.app.ui.screens.profile.views.ProfileFragment
 import com.ambient.gameday.app.ui.screens.register.RegisterFragment
 import com.ambient.gameday.app.ui.screens.welcome.WelcomeFragment
 import com.bumptech.glide.RequestManager
@@ -21,6 +22,7 @@ class AppFragmentFactory @Inject constructor(
             LoginFragment::class.java.name -> LoginFragment()
             RegisterFragment::class.java.name -> RegisterFragment()
             HomeFragment::class.java.name -> HomeFragment(featuredProductsAdapter)
+            ProfileFragment::class.java.name -> ProfileFragment(glide)
             else -> super.instantiate(classLoader, className)
         }
     }

@@ -12,5 +12,11 @@
     <string name="login_page_email_hint">Email</string>
     <string name="password">Password</string>
     <string name="content_desc_product_image">Product image</string>
+    <string name="profile_option_my_orders">My Orders</string>
+    <string name="profile_option_shipping_addresses">Shipping addresses</string>
+    <string name="profile_option_payment_methods">Payment methods</string>
+    <string name="profile_option_promo_codes">Promocodes</string>
+    <string name="profile_option_my_reviews">My reviews</string>
+    <string name="profile_option_settings">Settings</string>
 
 </resources>

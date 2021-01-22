@@ -103,7 +103,7 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
 
     // Dagger Hilt
-    def version_hilt ="2.30.1-alpha"
+    def version_hilt ="2.31.1-alpha"
     implementation "com.google.dagger:hilt-android:$version_hilt"
     kapt "com.google.dagger:hilt-android-compiler:$version_hilt"
 

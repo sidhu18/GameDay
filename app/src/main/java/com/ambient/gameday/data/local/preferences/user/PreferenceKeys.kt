@@ -1,9 +1,9 @@
 package com.ambient.gameday.data.local.preferences.user
 
-import androidx.datastore.preferences.core.preferencesKey
+import androidx.datastore.preferences.core.stringPreferencesKey
 
 object PreferenceKeys {
-    val USER_ID = preferencesKey<String>("user_id")
-    val USER_NAME = preferencesKey<String>("user_name")
-    val USER_EMAIL = preferencesKey<String>("user_email")
+    val USER_ID = stringPreferencesKey("user_id")
+    val USER_NAME = stringPreferencesKey("user_name")
+    val USER_EMAIL = stringPreferencesKey("user_email")
 }

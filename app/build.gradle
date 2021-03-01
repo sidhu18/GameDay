@@ -57,7 +57,7 @@ dependencies {
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2-native-mt"
     testImplementation "org.robolectric:robolectric:4.5.1"
     testImplementation "com.google.truth:truth:1.1.2"
-    testImplementation "org.mockito:mockito-core:3.7.7"
+    testImplementation "org.mockito:mockito-core:3.8.0"
 
     // Instrumented Unit Tests
     androidTestImplementation "junit:junit:4.13.2"
